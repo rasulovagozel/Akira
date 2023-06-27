@@ -1,0 +1,520 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap");
+* {
+  box-sizing: border-box;
+  outline: none;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  right: 0;
+  padding: 20px 10%;
+  max-width: 1340px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+.header img {
+  max-width: 140px;
+  height: auto;
+}
+.header ul {
+  display: flex;
+}
+.header ul li a {
+  color: #000;
+  font-size: 18px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+.header ul li a:hover,
+.header .icons i:hover {
+  color: #1367ef;
+}
+.header .icons i {
+  font-size: 25px;
+  color: black;
+  padding: 10px 7px;
+  transition: 0.3s ease-in-out;
+}
+.header ul li .tooltip {
+  position: relative;
+}
+.header ul li .tooltip .tooltip-text {
+  position: absolute;
+  display: inline-block;
+  top: -10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  width: 30px;
+  text-align: center;
+  padding: 3px;
+}
+.header ul li .tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  bottom: -6px;
+  right: 13px;
+  transform: rotate(60deg);
+  background-color: red;
+}
+.header ul li .tooltip .tooltip-text::before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 4px;
+  height: 10px;
+  bottom: -5px;
+  left: 10px;
+}
+.header ul li .tooltip-2 {
+  position: relative;
+}
+.header ul li .tooltip-2 .tooltip-text2 {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  right: 2px;
+  background-color: #7628a2;
+  color: white;
+  font-size: 13px;
+  width: 100px;
+  text-align: center;
+  padding: 3px;
+}
+.header ul li .tooltip-2 .tooltip-text2::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  bottom: -6px;
+  left: 13px;
+  transform: rotate(60deg);
+  background-color: #7628a2;
+}
+.header ul li .tooltip-2 .tooltip-text2::before {
+  content: "";
+  position: absolute;
+  background-color: #7628a2;
+  width: 4px;
+  height: 10px;
+  bottom: -5px;
+  left: 10px;
+}
+.header ul li .tooltip3 {
+  position: relative;
+}
+.header ul li .tooltip3 .tooltip-text3 {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 30px;
+  background-color: #22c8e5;
+  color: white;
+  font-size: 13px;
+  width: 80px;
+  text-align: center;
+  padding: 3px;
+}
+.header ul li .tooltip3 .tooltip-text3::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  bottom: -6px;
+  left: 13px;
+  transform: rotate(60deg);
+  background-color: #22c8e5;
+}
+.header ul li .tooltip3 .tooltip-text3::before {
+  content: "";
+  position: absolute;
+  background-color: #22c8e5;
+  width: 4px;
+  height: 10px;
+  bottom: -5px;
+  left: 10px;
+}
+#new-women-clothes {
+  background-image: url("../assets/slider1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15% 10%;
+  font-family: "Poppins", sans-serif;
+}
+#new-women-clothes .main-home {
+  width: 100%;
+  max-width: 1340px;
+  margin: 0 auto;
+}
+#new-women-clothes .main-home .main-text h3 {
+  color: #232323;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+#new-women-clothes .main-home .main-text h2 {
+  color: #232323;
+  font-size: 56px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 66px;
+  margin-bottom: 25px;
+}
+#new-women-clothes .main-home .main-text a {
+  display: inline-block;
+  background-color: #1367ef;
+  width: 150px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+#new-women-clothes .main-home .main-text a:hover {
+  background-color: #fff;
+  color: #000;
+}
+#fashion-cards {
+  font-family: "Poppins", sans-serif;
+}
+#fashion-cards .card-items {
+  margin: 40px auto;
+  max-width: 1340px;
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#fashion-cards .card-items .card {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  position: relative;
+  overflow: hidden;
+  height: 350px;
+}
+#fashion-cards .card-items .card img {
+  width: 100%;
+  height: 100%;
+  transition: 1s ease-in-out;
+  opacity: 0.9;
+}
+#fashion-cards .card-items .card h2 {
+  color: white;
+  position: absolute;
+  font-size: 25px;
+  font-weight: 600;
+  width: 350px;
+  line-height: 33px;
+  top: 0;
+  padding: 60px 30px;
+}
+#fashion-cards .card-items .card p {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 160px;
+  padding: 20px 30px;
+  font-size: 14px;
+}
+#fashion-cards .card-items .card .button {
+  padding: 20px 30px;
+}
+#fashion-cards .card-items .card .button a {
+  display: block;
+  position: absolute;
+  color: white;
+  background-color: #1367ef;
+  height: 40px;
+  line-height: 40px;
+  width: 150px;
+  text-align: center;
+  bottom: 70px;
+  transition: 0.3s ease-in-out;
+}
+#fashion-cards .card-items .card .button a:hover {
+  background-color: #fff;
+  color: #000;
+}
+#fashion-cards .card-items .card3 .texts h2 {
+  font-size: 37px;
+  line-height: 40px;
+}
+#fashion-cards .card-items .card3 .texts p {
+  margin-top: 30px;
+}
+#fashion-cards .card-items .card3 .texts .button {
+  margin-top: 40px;
+}
+#fashion-cards .card-items .card3 .texts .button a {
+  background-color: #fff;
+  color: #000;
+}
+#fashion-cards .card-items .card3 .texts .button a:hover {
+  background-color: #1367ef;
+  color: #fff;
+}
+#fashion-cards .card-items .card4 .texts h2 {
+  max-width: 200px;
+}
+#fashion-cards .card-items .card4 .texts p {
+  line-height: 20px;
+}
+#fashion-cards .card-items .card4 .texts .button {
+  margin-top: 40px;
+}
+#fashion-cards .card-items .card4 .texts .button a {
+  background-color: #232323;
+}
+#fashion-cards .card-items .card4 .texts .button a:hover {
+  background-color: #1367ef;
+  color: #fff;
+}
+#fashion-cards .card-items .card:hover.card img {
+  transform: scale(1.2);
+  opacity: 1;
+}
+#new-season-sale {
+  background-image: url("../assets/bg-banner.png");
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+#new-season-sale .text {
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#new-season-sale .text h3 {
+  font-size: 30px;
+  font-family: "Sedgwick Ave Display", cursive;
+  margin-top: 180px;
+}
+#new-season-sale .text h2 {
+  font-size: 65px;
+  font-weight: 600;
+  position: relative;
+  margin-top: 25px;
+}
+#new-season-sale .text .button {
+  margin-top: 30px;
+  margin-bottom: 150px;
+}
+#new-season-sale .text .button a {
+  color: #000;
+  background-color: #fff;
+  display: block;
+  width: 180px;
+  height: 50px;
+  text-align: center;
+  font-weight: 600;
+  padding: 10px 20px;
+  line-height: 30px;
+}
+#new-season-sale .text .button a:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+  background-color: #1367ef;
+  color: #fff;
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+#discount {
+  background-color: rgb(233, 231, 231);
+  margin-top: 100px;
+  font-family: "Poppins", sans-serif;
+}
+#discount .blocks {
+  margin: 0 auto;
+  max-width: 1340px;
+  display: flex;
+  justify-content: space-around;
+  height: 130px;
+}
+#discount .blocks .block {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  align-items: center;
+  gap: 30px;
+}
+#discount .blocks .block .icon i {
+  font-size: 30px;
+  color: #232323;
+}
+#discount .blocks .block .text h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #232323;
+}
+#discount .blocks .block .text p {
+  color: grey;
+  margin-top: 10px;
+  font-size: 14px;
+}
+#subscribe {
+  background-image: url("../assets/bg-newletter.png");
+  background-position: center center;
+  font-family: "Poppins", sans-serif;
+}
+#subscribe .texts {
+  margin: 0 auto;
+  max-width: 1340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+#subscribe .texts h2 {
+  margin-top: 60px;
+  font-size: 22px;
+  font-weight: 600;
+  word-spacing: 5px;
+}
+#subscribe .texts h3 {
+  font-size: 15px;
+  margin-top: 20px;
+}
+#subscribe .texts .sign-up {
+  width: 600px;
+  margin-top: 30px;
+  display: flex;
+}
+#subscribe .texts .sign-up input {
+  display: inline-block;
+  width: 400px;
+  height: 50px;
+  padding: 10px 20px;
+  border: none;
+}
+#subscribe .texts .sign-up button {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  background-color: #1367ef;
+  border: none;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+#subscribe .texts form {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+#subscribe .texts form label {
+  font-size: 15px;
+}
+footer .footer-section {
+  max-width: 1340px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 8%;
+  gap: 30px;
+  font-family: "Poppins", sans-serif;
+}
+footer .footer-section .about {
+  flex-basis: 50%;
+}
+footer .footer-section .lists {
+  flex-basis: 50%;
+}
+footer .footer-section .about img {
+  max-width: 160px;
+  height: auto;
+}
+footer .footer-section .about .text {
+  color: grey;
+  word-spacing: 3px;
+  font-size: 15px;
+  margin: 20px 0 40px 0;
+  line-height: 25px;
+}
+footer .footer-section .about .questions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-section .about .questions .number p {
+  font-size: 15px;
+  color: #232323;
+  margin-bottom: 20px;
+}
+footer .footer-section .about .questions .number h2 {
+  color: #1367ef;
+  font-size: 23px;
+  font-weight: 600;
+}
+footer .footer-section .about .questions .payment-methods p {
+  font-size: 15px;
+  color: #232323;
+  margin-bottom: 20px;
+}
+footer .footer-section .about .questions .payment-methods img {
+  max-width: 100%;
+}
+footer .lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .lists .information p {
+  font-size: 20px;
+  color: #232323;
+  font-weight: 500;
+}
+footer .lists .information ul {
+  margin-top: 15px;
+}
+footer .lists .information ul li {
+  padding: 8px 0 8px 0;
+}
+footer .lists .information ul li a {
+  color: grey;
+  font-size: 15px;
+}
